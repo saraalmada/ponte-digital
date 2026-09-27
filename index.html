@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusão Digital Voluntária | São Pio X</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pontes Digitais</h1>
+    <p>Apoio voluntário tecnológico para a autonomia dos Idosos</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Sobre a Iniciativa</h2>
+      <p>Nosso objetivo é aproximar pessoas dispostas a ensinar ferramentas digitais básicas como WhatsApp, transferência de PIX, acesso ao Gov.br, utilização do Google Maps e navegação no Gmail de idosos que buscam maior autonomia no dia a dia.<br>Cadastre-se como voluntário para participar das nossas próximas ações!</p>
+    </section>
+
+    <section class="card">
+      <h2>Cadastro de Voluntário</h2>
+      <form id="form-voluntario">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contato">Telefone / WhatsApp</label>
+          <input type="tel" id="contato" placeholder="(85) 98888-8888" required>
+        </div>
+
+        <div class="form-group">
+          <label for="disponibilidade">Disponibilidade</label>
+          <select id="disponibilidade" required>
+            <option value="">Selecione...</option>
+            <option value="Sábados pela manhã">Sábados pela manhã</option>
+            <option value="Sábados pela tarde">Sábados pela tarde</option>
+            <option value="Dias de semana (a combinar)">Dias de semana (a combinar)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="habilidades">Ferramentas que domina para ensinar</label>
+          <textarea id="habilidades" rows="3" placeholder="Ex: WhatsApp, PIX, agendamento gov.br, navegação no celular..." required></textarea>
+        </div>
+
+        <button type="submit">Cadastrar como Voluntário</button>
+      </form>
+
+      <div id="mensagem-sucesso">
+        Cadastro realizado com sucesso! Obrigado por apoiar a inclusão digital em nossa comunidade.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Voluntários Cadastrados (<span id="total-voluntarios">0</span>)</h2>
+      <div id="lista-voluntarios"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Extensionista II — CST em Análise e Desenvolvimento de Sistemas | Fortaleza–CE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
